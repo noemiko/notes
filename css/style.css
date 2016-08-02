@@ -1,0 +1,47 @@
+.header
+{
+text-align: center;
+color: white;
+}
+
+body
+{
+background-color: #666;
+}
+.container
+{
+	width: 90%;
+	margin: auto;
+	height: 500px;
+}
+.note
+{
+	margin:10px;
+	align:left;
+	display: inline-block;
+}
+.note *
+{
+	
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.text
+{
+	background-color: #ffc;
+	border: 3px solid #000;
+	width:300px;
+	min-height: 12em;
+	height: auto;
+	word-wrap: break-word;
+	resize: none;
+	
+}
+.image
+{
+	background-color: white;
+	width:200px;
+	min-height: 10.4em;
+	height: auto;
+}
