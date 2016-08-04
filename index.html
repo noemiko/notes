@@ -3,41 +3,21 @@
 
     <meta charset="utf-8">
 
-    <title>Jak nie dojadę</title>
+    <title>Notes</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body ng-app="app">
 <div class="header">
-<h1>Notatki</h1>
+<h1>Notes</h1>
 </div>
-  <div class="container" ng-controller="NotesController">
-   <div class ="note" >
-    <textarea class = "text" ng-click="NotesController.findUrls('123')">lorem ipsum
-      </textarea>
-    
-      <div class = "image">
-          
-      </div>
-    
-    </div>
-
-    <div class ="note">
-    <textarea class = "text">lorem ipsum
-      </textarea>
-    
-      <div class = "image">
-          
-      </div>
-    
-    </div>
-    </div>
-    
-    </div>
-
+  <div id="container">
+   <notes></notes>
   </div>
 </body>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
  <script src="js/app.js"></script>
  <script src="js/Notes.js"></script>
+ <script src="js/directives.js"></script>
+ <script src="js/services.js"></script>
 </html>
