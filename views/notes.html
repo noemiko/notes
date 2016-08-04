@@ -1,0 +1,5 @@
+
+<div class='buttonAdd' ng-click='note.addToDbNewNote()'> Add note</div>
+<div ng-repeat="(id, value) in note.notesInDb">
+	<note data-id={{id}}></note>
+</div>
