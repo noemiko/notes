@@ -44,15 +44,8 @@ angular.module('Notes')
     }
   };
 
-  note.setCorrectType =  function(valueFromStorage){ 
+  note.setDataToJson =  function(valueFromStorage){ 
 
-    if(typeof valueFromStorage != 'undefined')
-    { 
-      return setDataToJson(valueFromStorage);
-    }
-  };
-  function setDataToJson(valueFromStorage)
-  {
       if(typeof valueFromStorage === "object")
         {
           return valueFromStorage;

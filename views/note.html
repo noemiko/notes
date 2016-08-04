@@ -3,7 +3,7 @@
   <div class ="note" >
 <div ng-click="note.deleteNote(id)" class="x">✖</div>
     <textarea class = "text"
-              ng-init = "jData = note.setCorrectType(value)"
+              ng-init = "jData = note.setDataToJson(value)"
               ng-model = "jData.content"
               ng-change = "note.saveAndSearchUrl(id, jData.content)" 
               ng-model-options = "note.modelOptions">
