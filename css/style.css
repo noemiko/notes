@@ -3,12 +3,18 @@
 text-align: center;
 color: white;
 }
-
+.buttonAdd
+{	margin:auto;
+	width:70%;
+	height:15px;
+	background-color: white;
+	text-align: center;
+}
 body
 {
 background-color: #666;
 }
-.container
+#container
 {
 	width: 90%;
 	margin: auto;
@@ -17,14 +23,22 @@ background-color: #666;
 .note
 {
 	margin:10px;
-	align:left;
+	float: left;
 	display: inline-block;
+	position : relative;
 }
+.x{
+	top:0;
+	right: 0;
+	 position: absolute;
+	 cursor: pointer; 
+	 cursor: hand;
+}
+
 .note *
 {
 	
-	display: inline-block;
-	vertical-align: middle;
+
 }
 
 .text
@@ -36,6 +50,8 @@ background-color: #666;
 	height: auto;
 	word-wrap: break-word;
 	resize: none;
+		display: inline-block;
+	vertical-align: middle;
 	
 }
 .image
@@ -44,4 +60,10 @@ background-color: #666;
 	width:200px;
 	min-height: 10.4em;
 	height: auto;
+		display: inline-block;
+	vertical-align: middle;
 }
+img{
+	width: 80%;
+}
+
