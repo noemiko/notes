@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "noemiko",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.2",
   }
 }

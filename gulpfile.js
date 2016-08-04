@@ -1,6 +1,8 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var reload      = browserSync.reload;
+var gulp        = require('gulp'),
+	browserSync = require('browser-sync').create(),
+	jshint = require('gulp-jshint'),
+	reload = browserSync.reload;
+
 
 gulp.task('serve', function () {
 
@@ -10,5 +12,12 @@ gulp.task('serve', function () {
         }
     });
 
-    gulp.watch(['*.html', 'css/*.css', 'js/*.js']).on("change", reload);
+    gulp.watch(['*.html','views/*.html', 'css/*.css', 'js/*.js']).on("change", reload);
 });
+
+gulp.task('lint', function() {
+  return gulp.src('js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'))
+});
+
